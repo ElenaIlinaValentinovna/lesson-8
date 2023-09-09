@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 55%;
+    height: 90%;
+    background-color: darkolivegreen;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+     /* flex-wrap: wrap; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.central-text {
+    font-size: 24px;
+    width: 50%;
+}
+p1 {
+    font-size: 10px;
+}
+p2 {
+    font-size: 14px;
+}
+.info-block {
+    display: flex;
+    gap: 7%;
+    /* flex-direction: row; */
+}
+.block-one,
+.block-two {
+    display: flex;
+    gap: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .block-one,
+    .block-two{
+        flex-wrap: wrap;
+        display: flex;
+                  }
+    p1, p2, p {
+        font-size: 16px;
+    }
+    .central-text {
+        font-size: 14px;
+        width: 75%;
+    }
+}
